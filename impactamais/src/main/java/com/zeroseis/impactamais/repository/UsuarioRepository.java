@@ -7,7 +7,7 @@ import com.zeroseis.impactamais.model.Usuario;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 
-	//public List<Usuario> findAllbyNomeContainingIgnoreCase (String nome);
+	//public List<Usuario> findAllByNomeContainingIgnoreCase (String nome);
 	
-	public Optional<Usuario> findByEmailContainingIgnoreCase (String email);
+	public Optional<Usuario> findByEmail (String email);
 }
